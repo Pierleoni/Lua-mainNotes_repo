@@ -1,0 +1,98 @@
+
+:root{
+    --text-color: #fff;
+    --bold-font: bold;
+    --table-header-bg-color: red; 
+    --table-header-text-color: #000; 
+    --table-odd-row-bg-color: rgb(104, 95, 95); 
+    --table-oddText-color: black; 
+}
+
+body {
+    margin: 0;
+    padding: 0; 
+}
+
+/* Per allineare tutti gli header al centro */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+}
+
+h1,h2, h3 {
+    color: red !important;
+}
+
+h4 {
+    color: rgb(3, 52, 200) !important;
+}
+
+table,
+tr,
+td,
+th {
+    border: 3px solid rgb(255, 254, 251); 
+    text-align: center;
+    padding: 0px;
+    
+}
+
+/* Stile per le intestazioni della tabella */
+
+th {
+    background-color: var(--table-header-bg-color) !important; /* Red background */
+    color: var(--table-header-text-color) !important; /* Black text */
+}
+
+/* Stile per le righe dispari della tabella */
+
+tr:nth-child(odd) {
+    background-color: var(--table-odd-row-bg-color) !important; /* background color */
+    color: var(--table-oddText-color) !important ; /* Black text */
+}
+
+/* Assicurati che il testo delle celle sia nero per le righe dispari */
+
+table tr:nth-child(odd) td {
+    /* Black text for odd rows */
+    color: var(--table-oddText-color) !important; 
+}
+/* Per il codice inline */
+span.cm-inline-code {
+    background-color: rgb(54, 47, 47) !important; 
+    border-radius : 5px;
+    font-weight: var(--bold-font);
+    color: var(--text-color) !important; 
+    
+}
+
+
+/* Mostra sempre l'icona di copia accanto ai blocchi di codice*/
+.markdown-preview-view .code-block-header .copy-icon {
+    display: inline-block !important; /* Assicurati che sia visibile */
+    opacity: 1 !important; /* Imposta piena visibilità */
+    visibility: visible !important; /* Garantisci la visibilità */
+    transition: opacity 0.3s; /* Transizione per un effetto più elegante */
+}
+
+/* Specifico per blocchi di codice con linguaggio */
+.markdown-preview-view pre[data-lang] .copy-icon {
+    display: inline-block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Se desideri l'icona sempre visibile, anche senza hover */
+.markdown-preview-view pre .copy-icon {
+    opacity: 1 !important;
+    visibility: visible !important;
+} 
+
+
+
+
+

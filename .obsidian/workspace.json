@@ -1,0 +1,280 @@
+{
+  "main": {
+    "id": "644da96f8ecf188d",
+    "type": "split",
+    "children": [
+      {
+        "id": "269767309e0fe792",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8750b560a41176ec",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f8a59960be01c4e4",
+    "type": "split",
+    "children": [
+      {
+        "id": "3a7a76571c4dcc00",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a3c89a053243abbf",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "ed91c46ed24f173f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": true,
+                "extraContext": true,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "324a6eacdf7d3839",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "439729a7365528c0",
+            "type": "leaf",
+            "state": {
+              "type": "mindmap",
+              "state": {},
+              "icon": "dot-network",
+              "title": "Mind Map of Presentazione su le buone pratiche di programmazione e applicazioni reali di python"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 305.5
+  },
+  "right": {
+    "id": "8ef8bc59cd79fc10",
+    "type": "split",
+    "children": [
+      {
+        "id": "d88ee49771f49bcd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e4898971592c19a0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Obsidian.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Obsidian"
+            }
+          },
+          {
+            "id": "802c871ec5734c70",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          },
+          {
+            "id": "a60219cf15987635",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Obsidian.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Obsidian"
+            }
+          },
+          {
+            "id": "a18e163b47df1c85",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "alphabeticalReverse",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "8d255187d8ee045a",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          },
+          {
+            "id": "54a783dd63afdf8b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Obsidian.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Obsidian"
+            }
+          },
+          {
+            "id": "dec2bb569b60ec35",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
+          },
+          {
+            "id": "4129525f688f7cdd",
+            "type": "leaf",
+            "state": {
+              "type": "mermaid-toolbar-view",
+              "state": {},
+              "icon": "trident-custom",
+              "title": "Mermaid Toolbar"
+            }
+          }
+        ],
+        "currentTab": 6
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "quickadd:QuickAdd": false,
+      "callout-manager:Insert Callout": false,
+      "command-palette:Open command palette": false,
+      "workspaces:Manage workspace layouts": false,
+      "switcher:Open quick switcher": false,
+      "obsidian42-text-transporter:Text Transporter": false,
+      "graph:Open graph view": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "audio-recorder:Start/stop recording": false,
+      "obsidian-git:Open Git source control": false,
+      "obsidian-importer:Open Importer": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "markdown-importer:Open format converter": false,
+      "mermaid-tools:Open Mermaid Toolbar": false,
+      "darlal-switcher-plus:Open in Headings Mode": false,
+      "darlal-switcher-plus:Open Symbols for the active editor": false,
+      "canvas:Create new canvas": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "8750b560a41176ec",
+  "lastOpenFiles": [
+    "Lua/Data Types & Variabili/Data Types & Variabili.md",
+    "Data Types & Variabili/Data Types & Variabili.md",
+    "Data Types & Variabili",
+    "Lua.md",
+    "Output & Comments/Output & Comments.md",
+    "Lua/Lua.md",
+    "Lua/Data Types & Variabili",
+    "Photo/verified.png",
+    "Photo/varStrValue.png",
+    "Photo/triggered Barbero.jpg",
+    "Photo/Single Line comments.png",
+    "Photo/print str concat.png",
+    "Photo/print str concat output.png",
+    "Photo/outputStr.png",
+    "Photo/no output.png",
+    "Photo/multiLStr-Out.png",
+    "Photo/multiLineStr.png",
+    "Photo",
+    "Output & Comments",
+    "Lua",
+    "Lezione 2/Collections.md",
+    "Esercitazione su Python.md",
+    "Lezione 2/I modificatori.md",
+    "Ripasso Python.md",
+    "Lezione 2/Gli Operatori.md",
+    "Lezione 2/Introduzione a Python.md",
+    "Soft Skills/Soft skills.md",
+    "Lezione 2/Spiegazione esercizi Lezione 1 Python.md",
+    "Lezione 10/Le architetture di un Computer.md",
+    "Lezione 3/Cicli e condizionali.md",
+    "Lezione 2/Presentazione su le buone pratiche di programmazione e applicazioni reali di python.md",
+    "Numeri Complessi.md",
+    "Lezione 1/Algoritmi e Diagrammi a blocchi.md",
+    "Lezione 11/Esercizi su conversione e operazioni binarie.md",
+    "Scripts/numberInput.js",
+    "Lezione 11/conversion.md.md",
+    "Lezione 7/Complemento a 2 e Reti di calcolatori.md",
+    "Scripts/numberInput.js.md",
+    "Scripts",
+    "Lezione 11/Modello Von Neumann.md",
+    "Lezione 11",
+    "Lezione 7/Spiegazione per i vantaggi e svantaggi dei modelli Client server e P2P, spiegazione delle tre entità di spotify..md",
+    "Lezione 1/Introduzione generale.md",
+    "Lezione 2/dinamically-typed (tipizzato dinamicamente) o Statically-typed.md",
+    "Immagini/I_O.png.~tmp",
+    "Diagram/esercizio 2.svg.xml",
+    "Untitled.canvas"
+  ]
+}

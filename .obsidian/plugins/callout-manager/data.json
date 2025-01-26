@@ -1,0 +1,54 @@
+{
+  "callouts": {
+    "custom": [
+      "deep",
+      "history",
+      "beware"
+    ],
+    "settings": {
+      "deep": [
+        {
+          "changes": {
+            "icon": "lucide-award",
+            "color": "3, 88, 94"
+          }
+        }
+      ],
+      "danger": [
+        {
+          "changes": {
+            "icon": "lucide-bell-electric"
+          }
+        }
+      ],
+      "missing": [
+        {
+          "changes": {
+            "icon": "lucide-minus"
+          }
+        }
+      ],
+      "history": [
+        {
+          "changes": {
+            "icon": "highlightr-pen-orange",
+            "color": "142, 56, 148"
+          }
+        }
+      ],
+      "beware": [
+        {
+          "changes": {
+            "icon": "lucide-bell-ring",
+            "color": "255, 0, 38"
+          }
+        }
+      ]
+    }
+  },
+  "calloutDetection": {
+    "obsidian": true,
+    "theme": true,
+    "snippet": true
+  }
+}
