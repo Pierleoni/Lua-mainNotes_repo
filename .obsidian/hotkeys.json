@@ -581,5 +581,11 @@
       ],
       "key": "Q"
     }
+  ],
+  "open-with-default-app:show": [
+    {
+      "modifiers": [],
+      "key": "F6"
+    }
   ]
 }

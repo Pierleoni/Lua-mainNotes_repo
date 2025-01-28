@@ -58,7 +58,7 @@ Una volta digitato "local" bisogna dare un nome alla variabile ed un valore: per
 Come possiamo vedere dall'esempio alla variabile "a" è stato assegnato il valore "15"  
 
 > [!beware]
->il segno del uguale serve per assegnare un valore alla variabile, ciò significa che la variabile `a` ha un valore di 15  non che `a` equivale a `15` 
+>il segno del uguale (`=`) serve per assegnare un valore alla variabile, ciò significa che la variabile `a` ha un valore di 15  non che `a` equivale a `15` 
 
 Ovviamente il valore da assegnare ad una variabile non per forza deve essere un valore numerico, può essere anche una stringa o una booleano:  
 
@@ -182,8 +182,61 @@ if not flag then
 >>>else
  >>>   print("b è falso (false)")  -- Questo verrà stampato
 >>>end
->>>```
->>> 
+>>>``` 
+
 Quindi, sebbene entrambi vengano trattati come "falsy" nelle condizioni, `false` è un valore booleano esplicito, mentre `nil` è un valore che rappresenta l'assenza di valore.
 
-## 
+## Lo scope in Lua 
+Lo [[Scope]] in Lua è strettamente legato a come dichiari le [[Data Types & Variabili#Dichiarare le variabili|variabili]].
+#### Local Scope e Global Scope
+ 1. [[Scope#^localScope|Local Scope]]: 
+	Quando dichiari le variabili con la keyword `local`, questa esista solo nel blocco (scope) in cui è stata dichiarata, come una funzione, un ciclo o un file. 
+	Una variabile locale non è accessibile al di fuori di questo ambito. 
+```lua 
+local x = 10 
+print(x) -- Funziona, x è accessibile
+end
+print(x) -- Errore, x non è definita 
+```
+
+2. [[Scope#^globalScope|Global Scope]]: 
+  Se non si utilizza `local` per dichiarare una variabile, essa diventa **globale** per impostazione predefinita. 
+  Le variabili globali sono accessibili ovunque all'interno dello stesso ambiente globale (o "namespace"), il che può causare conflitti se due variabili con lo stesso nome vengono dichiarate in contesti diversi.
+```lua
+y = 20  -- Variabile globale
+print(y)  -- Funziona ovunque
+```
+
+Questo la possiamo pensare come una scatola, se si usano molteplici file Lua nel programma, mentre nelle variabili locali posso accedervi solo nei rispettivi file, ma con le variabili con lo scope globale posso accedervi al di fuori del file, ciò significa che i nomi delle tue variabili possono sovrascrivere il nome di una o più variabili dentro un altro file. 
+Si può pensare  a ogni file Lua come a un'unità separata di codice, che ha il proprio ambiente di esecuzione. Le variabili locali definite in un file non possono essere viste o usate in un altro file, come se fossero "confinate" in una scatola.
+Quindi le variabili locali sono **private** rispetto al file in cui vengono definite. Se definisci una variabile `local myVar` in un file, questa non sarà accessibile in un altro file Lua.
+Al contrario, le variabili globali (senza `local`) sono condivise tra tutti i file che fanno parte dello stesso programma Lua. Questo significa che se due file definiscono una variabile globale con lo stesso nome, l'ultima dichiarazione sovrascriverà la precedente.
+```lua
+-- File1.lua
+myGlobal = "Hello"
+```
+
+```lua
+-- File2.lua
+myGlobal = "World"  -- Sovrascrive la variabile globale del File1
+```
+
+Ovviamente ciò porta a conflitti,  comportamenti inaspettati  o errori nel programma proprio perché le variabile globali sono accessibili ovunque, e quindi quando accade quando due file utilizzano lo stesso nome di una o più variabili presenti nei due file. 
+
+
+> [!hint] Consigli per gestire lo Scope in Lua
+> - Usa sempre `local` quando possibile, specialmente in programmi complessi con più file, per evitare conflitti di nomi e migliorare la leggibilità e la sicurezza del codice. 
+>- Per condividere variabili o funzioni tra file, utilizza tabelle o il sistema dei moduli Lua:
+>```lua
+>  -- File1.lua
+>local myModule = {}
+>myModule.value = "Hello"
+>return myModule
+>
+>-- File2.lua
+local importedModule = require("File1")
+print(importedModule.value)  -- Stampa "Hello"
+>
+>```
+
+
